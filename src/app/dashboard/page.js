@@ -4,13 +4,14 @@ async function getData(){
     return data
    }
 
-   import { Button } from "@/component/TailwindMaterial/TailwindMaterial";
+   import { Button, Input } from "@/component/TailwindMaterial/TailwindMaterial";
 const Page = async() => {
     const data = await getData()
   console.log(data)
     return (
         <div>
             <Button>Click</Button>
+            <Input label="Username" />
             DashBoard{data.length}
         </div>
     );

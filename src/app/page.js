@@ -1,10 +1,10 @@
-import Navbar from "@/share/Navbar";
+import NavBarMain from "@/share/Navbar/NavBarMain";
 
 export default function Home() {
   return (
    <>
-   <Navbar />
-   sf
+   <NavBarMain />
+    
    </>
   );
 }

@@ -1,4 +1,3 @@
-import Navbar from "@/share/Navbar";
 
  
 
@@ -9,8 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-   <>
-   <Navbar />
+   <>  
    {children}
    </>
   );
