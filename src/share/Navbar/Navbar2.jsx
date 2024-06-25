@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { CgMenuRightAlt, CgSearch } from "react-icons/cg";
@@ -20,16 +21,17 @@ const Navbar2 = ({ openDrawer }) => {
   }, []);
   return (
     <nav
-      className={`w-full fixed top-0 left-0 z-[900] duration-300 bg-[#ffffff] ${
+      className={`w-full fixed top-0 left-0 z-[900] duration-300  ${
         scrolled ? "shadow-xl shadow-[#4a484845] py-2" : "py-3"
       }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4">
         <button className="text-3xl font-bold max-w-32 sm:w-36 h-12 rounded-lg   text-slate-600 border-slate-700">
-          <img
-            className="w-32"
-            src="https://i.ibb.co/YNtK5sS/screencapture-service64-static-media-Service64-logo-dark-36b731cc-svg-2024-06-24-21-17-05.png"
-            alt=""
+          <Image
+            src="https://service64.com/static/media/Service64_logo-dark.36b731cc.svg"
+             alt="Service64 Logo"
+             width={500} // specify the width
+             height={500} // specify the height
           />
         </button>
         <div className="hidden lg:flex xl:gap-4 items-center navigation text-slate-900 xl:text-lg">
